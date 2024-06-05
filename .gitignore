@@ -1,0 +1,54 @@
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore database files
+*.db
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ignore generated documentation
+docs/_build/
+
+# Ignore cache and temporary files
+*.cache/
+*.pyc
+*.pyo
+*.swp
+*.tmp
+*.bak
+*.class
+
+# Ignore specific venv
+.carpark_monitor/
