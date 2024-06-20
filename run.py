@@ -6,12 +6,12 @@ from src.plot import *
 API_KEY = os.environ.get("API_KEY")
 
 #### Dashboard Starts Here ####
-st.title("Sydney Real-time Commuter Car Park Occupancy")
+st.title("Sydney Commuter Car Park Real-time Occupancy")
 
 # Ask user to select car park
 carpark_dict = get_carpark_dict(api_key=API_KEY)
 carpark_dict = {k: v for k, v in carpark_dict.items() if not 'historical' in v}
-carpark_dict = dict(sorted(carpark_dict.items(), key=lambda x: x[1]))
+carpark_dict = dict(sorted(carpark_dict.items(), key=lambda x: x[1]), reverse=True)
 facility_name = st.selectbox("Select Car Park", list(carpark_dict.values()))
 facility_id = [k for k, v in carpark_dict.items() if v == facility_name][0]
 
